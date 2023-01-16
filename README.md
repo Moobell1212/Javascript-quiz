@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a quiz on Javascript using Javascript code. 
+This is a quiz about Javascript using Javascript code. 
 
 ## Usage
 
