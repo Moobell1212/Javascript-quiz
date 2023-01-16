@@ -16,7 +16,7 @@ When the user presses the "Start Quiz" button, the quiz will start, along with a
 
 Incorrect answers will reduce the timer by 5 seconds.
 
-Once the quiz is finished an endpage will appear which will state the user's scoreand allow them to input their initials.
+Once the quiz is finished an endpage will appear which will state the user's score and allow them to input their initials.
 
 <img src="./assets/images/EndScreen.png">
 
