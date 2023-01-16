@@ -6,39 +6,30 @@ This is a quiz on Javascript using Javascript code.
 
 ## Usage
 
+The original page will look as below.
+
+<img src="./assets/images/StartScreen.png">
+
 When the user presses the "Start Quiz" button, the quiz will start, along with a countdown timer. 
 
+<img src="./assets/images/Questions.png">
 
+Incorrect answers will reduce the timer by 5 seconds.
 
-## Credits
+Once the quiz is finished an endpage will appear which will state the user's scoreand allow them to input their initials.
 
-List your collaborators, if any, with links to their GitHub profiles.
+<img src="./assets/images/EndScreen.png">
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+Clicking the Submit screen will take the user to a highscores page.
 
-If you followed tutorials, include links to those here as well.
+<img src="./assets/images/Highscores.png">
 
-## License
+Deployed page: https://moobell1212.github.io/Javascript-quiz-/
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+# License
 
----
+MIT
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 
 
 
