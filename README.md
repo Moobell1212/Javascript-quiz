@@ -28,7 +28,7 @@ Deployed page: https://moobell1212.github.io/Javascript-quiz-/
 
 # License
 
-MIT
+MIT.
 
 
 
