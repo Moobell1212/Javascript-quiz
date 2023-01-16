@@ -11,18 +11,13 @@ var timer = document.querySelector("#time");
 // function added to start the quiz when the start button is clicked.
 startButton.addEventListener("click", function () {
     startScreen.style.display = "none";
-    console.log(questions);
+    // console.log(questions);
     questions.classList.remove("hide");
-    // questions.style.backgroundColor = "red";
-    runQuiz();
+    createQuestion();
     countdown();
 });
 
-function runQuiz() {
-    console.log(questions);
-    createQuestion()
-};
-
+// timer countdown function
 var timeLeft = 60;
 
 function countdown() {
@@ -38,6 +33,7 @@ function countdown() {
     }, 1000);
 }
 
+// questions list
 var Q = 0;
 var score = 0;
 
@@ -61,7 +57,8 @@ function createQuestion() {
             Q++;
             if (Q === questionsArr.length) {
                 console.log("endgame")
-                allDone()
+                allDone();
+                timeLeft = 0;
             }
             else {
                 createQuestion();
@@ -71,12 +68,14 @@ function createQuestion() {
     })
 };
 
+// function to create page when quiz is done, or timer gets to 0
 function allDone() {
     questions.classList.add("hide");
     endScreen.classList.remove("hide");
     finalScore.textContent = score;
 };
 
+// event listener for the "submit" button
 submitInitials.addEventListener("click", function () {
     var userInitials = document.querySelector("#initials").value;
     localStorage.setItem("UserInitials", userInitials);
