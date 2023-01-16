@@ -14,13 +14,18 @@ startButton.addEventListener("click", function () {
     questions.classList.remove("hide");
     // questions.style.backgroundColor = "red";
     runQuiz();
-
+    timer();
 });
 
 function runQuiz() {
     console.log(questions);
     createQuestion()
 };
+
+function timer() {
+
+    
+}
 
 
 var Q = 0;
