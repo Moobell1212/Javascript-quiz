@@ -6,6 +6,7 @@ var answerChoices = document.querySelector("#choices");
 var endScreen = document.querySelector("#end-screen");
 var finalScore = document.querySelector("#final-score");
 var submitInitials = document.querySelector("#submit");
+var timer = document.querySelector("#time");
 
 // function added to start the quiz when the start button is clicked.
 startButton.addEventListener("click", function () {
@@ -14,7 +15,7 @@ startButton.addEventListener("click", function () {
     questions.classList.remove("hide");
     // questions.style.backgroundColor = "red";
     runQuiz();
-    timer();
+    countdown();
 });
 
 function runQuiz() {
@@ -22,11 +23,20 @@ function runQuiz() {
     createQuestion()
 };
 
-function timer() {
+var timeLeft = 60;
 
-    
+function countdown() {
+    timer.innerHTML = timeLeft;
+    setInterval(function () {
+        if (timeLeft > 0) {
+            timeLeft--;
+        }
+        if (timeLeft === 0) {
+            allDone()
+        }
+        timer.textContent = timeLeft;
+    }, 1000);
 }
-
 
 var Q = 0;
 var score = 0;
@@ -46,6 +56,7 @@ function createQuestion() {
             else {
                 console.log("Incorrect");
                 score--;
+                timeLeft -= 5;
             }
             Q++;
             if (Q === questionsArr.length) {
