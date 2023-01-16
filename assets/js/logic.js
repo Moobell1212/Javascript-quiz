@@ -64,5 +64,6 @@ function allDone() {
 submitInitials.addEventListener("click", function () {
     var userInitials = document.querySelector("#initials").value;
     localStorage.setItem("UserInitials", userInitials);
+    // add link to highscores page???
 }
 );
